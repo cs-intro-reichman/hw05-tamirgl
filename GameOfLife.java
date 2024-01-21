@@ -145,10 +145,14 @@ public class GameOfLife {
 
 		for (int p = -1; p <= 1; p++) {
 			for (int q = -1; q <= 1; q++) {
-				if ((!(p == 0 && q == 0)) && board[i + p][j + q] == 1) {
+				if (board[i + p][j + q] == 1) {
 					count++;
 				}
 			}
+		}
+		
+		if (board[i][j] == 1) {
+			count--;
 		}
 
 		return count;
