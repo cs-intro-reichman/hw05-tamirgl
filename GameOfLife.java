@@ -32,6 +32,7 @@ public class GameOfLife {
 
 		for (int i = 1; i < board.length - 1; i++) {
 			for (int j = 1; j < board[0].length - 1; j++) {
+				// why use printf ? it is less comfortable the print ln with +'s
 				System.out.printf("Cell [%d][%d]: %s\nLive neighbors: %d\nIn next generation: %s\n\n",
 								  i,
 								  j,
